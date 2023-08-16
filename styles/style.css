@@ -1,0 +1,210 @@
+@import url(./styles/home.css);
+@import url(./styles/salgados.css);
+
+:root{
+--branco-primario: #EFEFEF;
+--vermelho-secundario: #A63247;
+--azul-terciario: #2097E3;
+--dourado-quartenario: #f2b749;
+--fonte-principal: 'Cairo';
+--fonte-secundaria: 'Libre Baskerville';
+--fonte-terciaria: 'PT Serif'
+}
+
+@media screen and (max-width: 768px){
+
+    .logo{
+    margin: auto;
+    display: block;
+    align-items: center;
+    width: 5em;
+    }
+    
+    div{
+        gap: 1em;
+    }
+    
+    .cabecalho{
+        background-color: var(--vermelho-secundario);
+        width: 100%;
+    }
+    
+    .cabecalho__menu{
+        padding: 2em;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 0.8em;
+    }
+    
+    
+    .cabecalho__menu__link__contato{
+        font-family: var(--fonte-principal);
+        text-decoration: none;
+        color: var(--branco-primario);
+        font-weight: 600;
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        padding: 0.2em ;
+        border: 2px solid var(--dourado-quartenario);
+        border-radius: 2em;
+        width: 10.5em;
+        gap: 0.5em;
+    }
+    
+    .logo__wpp{
+        width: 1.5em;
+    }
+    
+    .conteiner__principal{
+        background-image: url("../assets/povilho_home.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100vh;
+        color: var(--dourado-quartenario);
+        font-family: var(--fonte-secundaria);
+        text-align: center;
+        padding: 8em;
+    }
+    
+    .conteiner__since{
+        font-size: 2em;
+    }
+    
+    .conteiner__empresa{
+        font-size: 5em;
+    }
+    
+    .conteiner__frase{
+        font-size: 2em;
+        color: var(--branco-primario);
+        font-family: var(--fonte-terciaria);
+    }
+    
+    .conteiner__catalogo{
+        font-family: var(--fonte-principal);
+        font-weight: 700;
+        text-align:center;
+    }
+    
+    .catalogo__titulo{
+        font-family: var(--fonte-principal);
+        font-weight: 700;
+        text-align:center;
+        font-size: 2.5em;
+        color: var(--azul-terciario);
+        text-align:left;
+        position: relative;
+        margin-top: 5em;
+    }
+    
+    .catalogo__produtos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        flex-direction: column;
+        list-style-type: none;
+    }
+    
+    .catalogo__produtos__foto{
+        width: 45%;
+    }
+    
+    .catalogo__produtos__sabor{
+        font-size: 1.5em;
+        color: var(--vermelho-secundario);
+        margin-bottom: 5em;
+    }
+    
+    .conteiner__localizacao{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: var(--fonte-principal);
+        font-weight: 700;
+        align-items: center;
+    
+    }
+    
+    .localizacao__texto{
+        color: var(--azul-terciario);
+        font-size: 2.5em;
+        margin-bottom: 1em;
+    }
+    
+    .localizacao__endereco{
+        color: var(--vermelho-secundario);
+        font-size: 2.5em;
+        margin-top: 1em;
+    }
+    
+    .localizacao__img{
+        width: 90vh;
+    }
+    
+    .localizacao__contato{
+        display: flex;
+        justify-content: center;
+        gap: 0.5em;
+        padding: 0.5em ;
+        text-decoration: none;
+        color: var(--branco-primario);
+        background-color:  var(--vermelho-secundario);
+        border-radius: 5em;
+        width: 10.5em;
+        font-size: 3.5em;
+        font-family: var(--fonte-principal);
+        font-weight: 600;
+        margin: 4em;
+    }
+    
+    .logo__wpp2{
+        width: 1.5em;
+    }
+    
+    .rodape{
+        font-family: var(--fonte-principal);
+        font-weight: 700;
+        color: var(--branco-primario);
+        text-align: center;
+    }
+    
+    .rodape__redes_sociais__titulo{
+        font-size: 2em;
+    }
+    
+    .rodape__redes_sociais{
+        background-color: var(--azul-terciario);
+        font-size: 1.5em;
+    }
+    
+    .rodape__redes_sociais__app{
+        font-size: 2em;
+        text-decoration: none;
+        color: var(--branco-primario);
+        align-items: center;
+        padding: 1em;
+    }
+    
+    .rodape__copyright{
+        background-color: var(--vermelho-secundario);
+        padding: 1em;
+        font-size: 2em;
+    
+    }
+    
+    .cabecalho__menu__link__contato:hover{
+        background-color: var(--azul-terciario);
+        border: var(--azul-terciario);
+        border: 2px solid var(--azul-terciario);
+        border-radius: 2em;
+    
+    }
+    
+    .localizacao__contato:hover{
+        background-color: var(--dourado-quartenario);
+        
+    }
+}
+
